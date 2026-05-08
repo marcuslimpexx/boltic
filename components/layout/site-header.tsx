@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { ShoppingCart, Heart, User, Search } from "lucide-react";
+import { ShoppingCart, Heart, User } from "lucide-react";
 import { BolticLogo } from "./boltic-logo";
 import { MainNav } from "./main-nav";
 import { LanguageSwitcher } from "./language-switcher";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { SearchBar } from "@/components/search/search-bar";
 
 export function SiteHeader() {
   const t = useTranslations("nav");
@@ -19,21 +19,9 @@ export function SiteHeader() {
         {/* Main nav — hidden on mobile */}
         <MainNav className="hidden md:flex ml-8" />
 
-        {/* Search bar — hidden on mobile */}
+        {/* Search bar */}
         <div className="flex-1 max-w-sm mx-auto hidden md:flex items-center">
-          <div className="relative w-full">
-            <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted pointer-events-none"
-              aria-hidden="true"
-            />
-            <Input
-              type="search"
-              placeholder={t("search")}
-              className="pl-9 bg-background"
-              aria-label={t("search")}
-              readOnly
-            />
-          </div>
+          <SearchBar />
         </div>
 
         {/* Right actions */}
