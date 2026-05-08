@@ -214,5 +214,45 @@
     "confirmation_subtitle": "Thank you for your order. We'll send updates to your email.",
     "view_order": "View order details",
     "continue_shopping": "Continue shopping"
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "write": "Write a review",
+    "your_rating": "Your rating",
+    "your_review": "Your review (optional)",
+    "submit": "Submit review",
+    "submitting": "Submitting...",
+    "submitted": "Thank you for your review!",
+    "login_required": "Please log in to write a review",
+    "already_reviewed": "You've already reviewed this product",
+    "verified_purchase": "Verified purchase",
+    "helpful": "Helpful",
+    "no_reviews": "No reviews yet",
+    "be_first": "Be the first to review this product",
+    "rating_required": "Please select a rating",
+    "out_of": "out of 5"
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "empty": "Your wishlist is empty",
+    "empty_desc": "Save products you love to buy later",
+    "add": "Add to wishlist",
+    "remove": "Remove from wishlist",
+    "added": "Added to wishlist",
+    "removed": "Removed from wishlist",
+    "move_to_cart": "Add to cart",
+    "item_count": "{count, plural, one {# item} other {# items}}",
+    "login_required": "Please log in to use your wishlist"
+  },
+  "account": {
+    "title": "My account",
+    "welcome": "Welcome back, {name}",
+    "orders": "My orders",
+    "orders_desc": "Track and manage your orders",
+    "wishlist": "My wishlist",
+    "wishlist_desc": "Products you've saved",
+    "settings": "Account settings",
+    "settings_desc": "Update your profile and password",
+    "logout": "Log out"
   }
 }

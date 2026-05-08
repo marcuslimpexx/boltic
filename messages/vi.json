@@ -214,5 +214,45 @@
     "confirmation_subtitle": "Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ gửi cập nhật qua email.",
     "view_order": "Xem chi tiết đơn hàng",
     "continue_shopping": "Tiếp tục mua sắm"
+  },
+  "reviews": {
+    "title": "Đánh giá của khách hàng",
+    "write": "Viết đánh giá",
+    "your_rating": "Đánh giá của bạn",
+    "your_review": "Nhận xét của bạn (không bắt buộc)",
+    "submit": "Gửi đánh giá",
+    "submitting": "Đang gửi...",
+    "submitted": "Cảm ơn bạn đã đánh giá!",
+    "login_required": "Vui lòng đăng nhập để viết đánh giá",
+    "already_reviewed": "Bạn đã đánh giá sản phẩm này rồi",
+    "verified_purchase": "Đã mua hàng",
+    "helpful": "Hữu ích",
+    "no_reviews": "Chưa có đánh giá nào",
+    "be_first": "Hãy là người đầu tiên đánh giá sản phẩm này",
+    "rating_required": "Vui lòng chọn số sao",
+    "out_of": "/ 5"
+  },
+  "wishlist": {
+    "title": "Danh sách yêu thích",
+    "empty": "Danh sách yêu thích trống",
+    "empty_desc": "Lưu sản phẩm bạn yêu thích để mua sau",
+    "add": "Thêm vào yêu thích",
+    "remove": "Xóa khỏi yêu thích",
+    "added": "Đã thêm vào yêu thích",
+    "removed": "Đã xóa khỏi yêu thích",
+    "move_to_cart": "Thêm vào giỏ hàng",
+    "item_count": "{count} sản phẩm",
+    "login_required": "Vui lòng đăng nhập để sử dụng danh sách yêu thích"
+  },
+  "account": {
+    "title": "Tài khoản của tôi",
+    "welcome": "Xin chào, {name}",
+    "orders": "Đơn hàng của tôi",
+    "orders_desc": "Theo dõi và quản lý đơn hàng",
+    "wishlist": "Danh sách yêu thích",
+    "wishlist_desc": "Sản phẩm bạn đã lưu",
+    "settings": "Cài đặt tài khoản",
+    "settings_desc": "Cập nhật thông tin cá nhân",
+    "logout": "Đăng xuất"
   }
 }
