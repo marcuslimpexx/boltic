@@ -85,5 +85,70 @@
     "cancel": "Hủy",
     "confirm": "Xác nhận",
     "vnd_format": "₫"
+  },
+  "filters": {
+    "title": "Bộ lọc",
+    "clear_all": "Xóa tất cả",
+    "brand": "Thương hiệu",
+    "price_range": "Khoảng giá",
+    "capacity": "Dung lượng (mAh)",
+    "fast_charging": "Sạc nhanh",
+    "wireless_charging": "Sạc không dây",
+    "output_ports": "Cổng xuất",
+    "min_rating": "Đánh giá tối thiểu",
+    "apply": "Áp dụng",
+    "showing": "Hiển thị {count} sản phẩm"
+  },
+  "sort": {
+    "label": "Sắp xếp",
+    "relevance": "Phù hợp nhất",
+    "newest": "Mới nhất",
+    "price_asc": "Giá tăng dần",
+    "price_desc": "Giá giảm dần",
+    "rating": "Đánh giá cao",
+    "best_selling": "Bán chạy nhất"
+  },
+  "search": {
+    "placeholder": "Tìm kiếm sản phẩm...",
+    "see_all": "Xem tất cả kết quả cho \"{query}\"",
+    "no_results": "Không tìm thấy sản phẩm nào",
+    "results_for": "Kết quả cho \"{query}\"",
+    "result_count": "{count} sản phẩm"
+  },
+  "category": {
+    "power_banks": "Pin Dự Phòng",
+    "compact": "Nhỏ gọn (≤10.000 mAh)",
+    "standard": "Tiêu chuẩn (10.001–20.000 mAh)",
+    "high_capacity": "Dung lượng cao (20.001–30.000 mAh)",
+    "mega": "Siêu dung lượng (>30.000 mAh)",
+    "all_products": "Tất cả sản phẩm",
+    "products_count": "{count} sản phẩm"
+  },
+  "pagination": {
+    "previous": "Trang trước",
+    "next": "Trang tiếp",
+    "page_of": "Trang {current} / {total}"
+  },
+  "product_detail": {
+    "sold_by": "Bán bởi",
+    "sku": "Mã sản phẩm",
+    "availability": "Tình trạng",
+    "quantity": "Số lượng",
+    "share": "Chia sẻ",
+    "capacity_mah": "Dung lượng",
+    "output_watts": "Công suất",
+    "weight": "Khối lượng",
+    "dimensions": "Kích thước",
+    "color": "Màu sắc",
+    "certifications": "Chứng nhận",
+    "input_ports": "Cổng vào",
+    "output_ports_label": "Cổng ra",
+    "fast_charging_label": "Sạc nhanh",
+    "wireless_label": "Sạc không dây",
+    "passthrough_label": "Passthrough",
+    "yes": "Có",
+    "no": "Không",
+    "no_reviews": "Chưa có đánh giá nào",
+    "be_first": "Hãy là người đầu tiên đánh giá sản phẩm này"
   }
 }

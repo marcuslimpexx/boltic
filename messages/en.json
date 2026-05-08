@@ -85,5 +85,70 @@
     "cancel": "Cancel",
     "confirm": "Confirm",
     "vnd_format": "₫"
+  },
+  "filters": {
+    "title": "Filters",
+    "clear_all": "Clear all",
+    "brand": "Brand",
+    "price_range": "Price range",
+    "capacity": "Capacity (mAh)",
+    "fast_charging": "Fast charging",
+    "wireless_charging": "Wireless charging",
+    "output_ports": "Output ports",
+    "min_rating": "Minimum rating",
+    "apply": "Apply",
+    "showing": "Showing {count} products"
+  },
+  "sort": {
+    "label": "Sort by",
+    "relevance": "Most relevant",
+    "newest": "Newest",
+    "price_asc": "Price: Low to high",
+    "price_desc": "Price: High to low",
+    "rating": "Highest rated",
+    "best_selling": "Best selling"
+  },
+  "search": {
+    "placeholder": "Search products...",
+    "see_all": "See all results for \"{query}\"",
+    "no_results": "No products found",
+    "results_for": "Results for \"{query}\"",
+    "result_count": "{count} products"
+  },
+  "category": {
+    "power_banks": "Power Banks",
+    "compact": "Compact (≤10,000 mAh)",
+    "standard": "Standard (10,001–20,000 mAh)",
+    "high_capacity": "High Capacity (20,001–30,000 mAh)",
+    "mega": "Mega (>30,000 mAh)",
+    "all_products": "All products",
+    "products_count": "{count} products"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page_of": "Page {current} of {total}"
+  },
+  "product_detail": {
+    "sold_by": "Sold by",
+    "sku": "SKU",
+    "availability": "Availability",
+    "quantity": "Quantity",
+    "share": "Share",
+    "capacity_mah": "Capacity",
+    "output_watts": "Output power",
+    "weight": "Weight",
+    "dimensions": "Dimensions",
+    "color": "Color",
+    "certifications": "Certifications",
+    "input_ports": "Input ports",
+    "output_ports_label": "Output ports",
+    "fast_charging_label": "Fast charging",
+    "wireless_label": "Wireless charging",
+    "passthrough_label": "Passthrough",
+    "yes": "Yes",
+    "no": "No",
+    "no_reviews": "No reviews yet",
+    "be_first": "Be the first to review this product"
   }
 }
