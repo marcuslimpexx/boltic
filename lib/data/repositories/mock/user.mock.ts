@@ -1,4 +1,5 @@
-import { randomUUID } from "crypto";
+// Use Web Crypto API (works in both Node.js and Edge Runtime)
+const randomUUID = () => globalThis.crypto.randomUUID();
 import type { IUserRepository } from "../interfaces/user.repository";
 import type { User, Address } from "@/lib/data/types";
 
