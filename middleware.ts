@@ -1,61 +1,69 @@
 /**
- * Edge-Runtime middleware — no external JWT libraries, no @/ path aliases.
+ * Edge-Runtime middleware — only "next/server", zero third-party imports.
  *
- * Route protection uses a lightweight cookie-existence check.  All actual
- * authorisation (role check, session validity) is enforced server-side in
- * the page components and Server Actions — this layer just handles the
- * redirect UX for unauthenticated visitors.
+ * next-intl/middleware crashes in Vercel's Edge Runtime; this custom
+ * implementation reproduces its essential behaviour:
+ *   1. Redirect bare paths to the default locale prefix.
+ *   2. Set the x-next-intl-locale header so getRequestConfig can read it.
+ *   3. Redirect unauthenticated users away from protected routes.
  */
-import createMiddleware from "next-intl/middleware";
-import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-// ── Inline routing config (mirrors @/i18n/routing) ───────────────────────────
 const LOCALES = ["vi", "en"] as const;
 type Locale = (typeof LOCALES)[number];
 const DEFAULT_LOCALE: Locale = "vi";
 
-const intlMiddleware = createMiddleware({
-  locales: LOCALES,
-  defaultLocale: DEFAULT_LOCALE,
-  localePrefix: "always",
-  localeDetection: false,
-});
-
-// ── Route guards ──────────────────────────────────────────────────────────────
+// Routes that require a session cookie
 const PROTECTED_PREFIXES = ["/admin", "/account", "/checkout"];
 
-function localeFromPathname(pathname: string): Locale {
-  const seg = pathname.split("/")[1] ?? "";
-  return (LOCALES as readonly string[]).includes(seg)
-    ? (seg as Locale)
-    : DEFAULT_LOCALE;
+function detectLocale(pathname: string): Locale | null {
+  for (const locale of LOCALES) {
+    if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)) {
+      return locale;
+    }
+  }
+  return null;
 }
 
 function isAuthenticated(request: NextRequest): boolean {
-  // NextAuth v5 sets one of these two cookies
   return (
     request.cookies.has("authjs.session-token") ||
     request.cookies.has("__Secure-authjs.session-token")
   );
 }
 
-// ── Handler ───────────────────────────────────────────────────────────────────
-export default function middleware(request: NextRequest): NextResponse {
-  const { pathname } = request.nextUrl;
+export function middleware(request: NextRequest): NextResponse {
+  const { pathname, search } = request.nextUrl;
 
-  // Strip locale prefix to check route type
-  const bare = pathname.replace(/^\/(vi|en)/, "");
-  const needsAuth = PROTECTED_PREFIXES.some((p) => bare.startsWith(p));
+  const locale = detectLocale(pathname);
+
+  // 1. No locale prefix → redirect to default locale
+  if (!locale) {
+    const url = new URL(
+      `/${DEFAULT_LOCALE}${pathname === "/" ? "" : pathname}${search}`,
+      request.url
+    );
+    return NextResponse.redirect(url);
+  }
+
+  // 2. Auth guard — strip locale to compare against protected prefixes
+  const bare = pathname.slice(locale.length + 1) || "/"; // e.g. "/admin/..."
+  const bareWithSlash = bare.startsWith("/") ? bare : `/${bare}`;
+  const needsAuth = PROTECTED_PREFIXES.some((p) =>
+    bareWithSlash.startsWith(p)
+  );
 
   if (needsAuth && !isAuthenticated(request)) {
-    const locale = localeFromPathname(pathname);
-    const loginUrl = new URL(`/${locale}/login`, request.url);
+    const loginUrl = new URL(`/${locale}/login${search}`, request.url);
     loginUrl.searchParams.set("callbackUrl", pathname);
     return NextResponse.redirect(loginUrl);
   }
 
-  return intlMiddleware(request) as NextResponse;
+  // 3. Pass through — set locale header for next-intl getRequestConfig
+  const response = NextResponse.next();
+  response.headers.set("x-next-intl-locale", locale);
+  return response;
 }
 
 export const config = {
