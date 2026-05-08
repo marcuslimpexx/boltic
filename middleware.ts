@@ -1,8 +1,12 @@
+import NextAuth from "next-auth";
+import { edgeAuthConfig } from "@/lib/auth/edge.config";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
-import { auth } from "@/lib/auth/config";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+
+// Lightweight NextAuth instance — Edge-safe (no bcrypt, no DB)
+const { auth } = NextAuth(edgeAuthConfig);
 
 const intlMiddleware = createMiddleware(routing);
 
@@ -12,11 +16,12 @@ const PROTECTED_PATTERNS = ["/account", "/checkout"];
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Strip locale prefix to get bare path
   const localePattern = new RegExp(`^/(${routing.locales.join("|")})`);
   const pathnameWithoutLocale = pathname.replace(localePattern, "");
 
-  const isAdmin = ADMIN_PATTERNS.some((p) => pathnameWithoutLocale.startsWith(p));
+  const isAdmin = ADMIN_PATTERNS.some((p) =>
+    pathnameWithoutLocale.startsWith(p)
+  );
   const isProtected = PROTECTED_PATTERNS.some((pattern) =>
     pathnameWithoutLocale.startsWith(pattern)
   );
