@@ -31,7 +31,7 @@ export function BolticLogo({
     <Link
       href="/"
       className={cn(
-        "inline-flex items-baseline font-bold tracking-tight select-none no-underline",
+        "inline-flex items-center font-bold tracking-tight select-none no-underline",
         text,
         textClass,
         className
