@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -11,17 +11,30 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Boltic — Power, Delivered.",
-    template: "%s | Boltic",
-  },
-  description:
-    "Vietnam's marketplace for portable power products. Genuine power banks delivered across Vietnam.",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
-  ),
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return {
+    title: {
+      default: t("title"),
+      template: "%s | Boltic",
+    },
+    description: t("description"),
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+    ),
+    alternates: {
+      languages: {
+        vi: `${process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"}/vi`,
+        en: `${process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"}/en`,
+      },
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,

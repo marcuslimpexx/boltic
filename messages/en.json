@@ -68,6 +68,10 @@
     "shipping_returns": "Shipping & Returns",
     "related": "Related products"
   },
+  "meta": {
+    "title": "Boltic — Power, Delivered.",
+    "description": "Vietnam's marketplace for portable power products. Genuine power banks delivered across Vietnam."
+  },
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",

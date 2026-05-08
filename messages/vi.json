@@ -68,6 +68,10 @@
     "shipping_returns": "Vận chuyển & Đổi trả",
     "related": "Sản phẩm liên quan"
   },
+  "meta": {
+    "title": "Boltic — Năng lượng, giao tận tay.",
+    "description": "Sàn thương mại điện tử pin dự phòng hàng đầu Việt Nam. Sản phẩm chính hãng, giao hàng toàn quốc."
+  },
   "common": {
     "loading": "Đang tải...",
     "error": "Đã xảy ra lỗi",
