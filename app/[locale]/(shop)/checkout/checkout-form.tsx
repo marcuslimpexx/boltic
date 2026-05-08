@@ -26,6 +26,35 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 
+function VisaLogo() {
+  return (
+    <svg viewBox="0 0 48 16" width="38" height="13" aria-label="Visa" role="img">
+      <rect width="48" height="16" rx="3" fill="#1A1F71" />
+      <text x="7" y="12" fontFamily="Arial,sans-serif" fontWeight="bold" fontSize="11" fill="white" letterSpacing="1">VISA</text>
+    </svg>
+  );
+}
+
+function MastercardLogo() {
+  return (
+    <svg viewBox="0 0 38 24" width="38" height="24" aria-label="Mastercard" role="img">
+      <rect width="38" height="24" rx="4" fill="#252525" />
+      <circle cx="14" cy="12" r="7" fill="#EB001B" />
+      <circle cx="24" cy="12" r="7" fill="#F79E1B" />
+      <path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#FF5F00" />
+    </svg>
+  );
+}
+
+function AmexLogo() {
+  return (
+    <svg viewBox="0 0 48 16" width="38" height="13" aria-label="American Express" role="img">
+      <rect width="48" height="16" rx="3" fill="#2E77BC" />
+      <text x="4" y="12" fontFamily="Arial,sans-serif" fontWeight="bold" fontSize="10" fill="white" letterSpacing="0.5">AMEX</text>
+    </svg>
+  );
+}
+
 interface CheckoutFormProps {
   locale: string;
 }
@@ -314,6 +343,7 @@ export function CheckoutForm({ locale }: CheckoutFormProps) {
                               { id: "vietqr", label: t("vietqr") },
                               { id: "momo", label: t("momo") },
                               { id: "zalopay", label: t("zalopay") },
+                              { id: "card", label: t("card") },
                             ] as const
                           ).map((method) => (
                             <div
@@ -326,9 +356,16 @@ export function CheckoutForm({ locale }: CheckoutFormProps) {
                               />
                               <Label
                                 htmlFor={`pay-${method.id}`}
-                                className="cursor-pointer font-normal"
+                                className="cursor-pointer font-normal flex items-center gap-2 flex-wrap"
                               >
-                                {method.label}
+                                <span>{method.label}</span>
+                                {method.id === "card" && (
+                                  <span className="flex items-center gap-1.5 ml-1">
+                                    <VisaLogo />
+                                    <MastercardLogo />
+                                    <AmexLogo />
+                                  </span>
+                                )}
                               </Label>
                             </div>
                           ))}

@@ -35,7 +35,7 @@ export const checkoutSchema = z.object({
   district: z.string().min(1, "District is required"),
   province: z.string().min(1, "Province is required"),
   shippingMethodId: z.enum(["ghn", "ghtk", "viettelpost"]),
-  paymentMethod: z.enum(["bank_transfer", "vietqr", "momo", "zalopay"]),
+  paymentMethod: z.enum(["bank_transfer", "vietqr", "momo", "zalopay", "card"]),
 });
 
 export type CheckoutFormData = z.infer<typeof checkoutSchema>;

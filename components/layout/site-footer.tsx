@@ -153,21 +153,52 @@ export function SiteFooter() {
           style={{ borderColor: "rgba(255,255,255,0.07)" }}
         >
           <p className="text-xs text-white/30">{t("copyright")}</p>
+
+          {/* Payment method logos */}
           <div className="flex items-center gap-2 flex-wrap justify-center">
-            {(["VietQR", "MoMo", "ZaloPay", "Bank Transfer"] as const).map(
-              (method) => (
-                <span
-                  key={method}
-                  className="px-2 py-0.5 rounded text-[11px] font-medium"
-                  style={{
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    color: "rgba(255,255,255,0.5)",
-                  }}
-                >
-                  {method}
-                </span>
-              )
-            )}
+            {/* Visa */}
+            <svg viewBox="0 0 48 16" width="40" height="14" aria-label="Visa" role="img">
+              <rect width="48" height="16" rx="3" fill="#1A1F71" />
+              <text x="7" y="12" fontFamily="Arial,sans-serif" fontWeight="bold" fontSize="11" fill="white" letterSpacing="1">VISA</text>
+            </svg>
+
+            {/* Mastercard */}
+            <svg viewBox="0 0 38 24" width="36" height="22" aria-label="Mastercard" role="img">
+              <rect width="38" height="24" rx="4" fill="#252525" />
+              <circle cx="14" cy="12" r="7" fill="#EB001B" />
+              <circle cx="24" cy="12" r="7" fill="#F79E1B" />
+              <path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#FF5F00" />
+            </svg>
+
+            {/* Amex */}
+            <svg viewBox="0 0 48 16" width="40" height="14" aria-label="American Express" role="img">
+              <rect width="48" height="16" rx="3" fill="#2E77BC" />
+              <text x="4" y="12" fontFamily="Arial,sans-serif" fontWeight="bold" fontSize="10" fill="white" letterSpacing="0.5">AMEX</text>
+            </svg>
+
+            {/* VietQR */}
+            <span
+              className="px-2 py-0.5 rounded text-[11px] font-medium"
+              style={{ border: "1px solid rgba(255,255,255,0.18)", color: "rgba(255,255,255,0.55)" }}
+            >
+              VietQR
+            </span>
+
+            {/* MoMo */}
+            <span
+              className="px-2 py-0.5 rounded text-[11px] font-medium"
+              style={{ background: "#A50064", color: "white" }}
+            >
+              MoMo
+            </span>
+
+            {/* ZaloPay */}
+            <span
+              className="px-2 py-0.5 rounded text-[11px] font-medium"
+              style={{ background: "#0068FF", color: "white" }}
+            >
+              ZaloPay
+            </span>
           </div>
         </div>
       </div>
