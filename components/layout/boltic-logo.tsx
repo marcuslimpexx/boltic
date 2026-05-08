@@ -8,15 +8,15 @@ interface BolticLogoProps {
 }
 
 const sizeMap = {
-  sm: { text: "text-lg", svgHeight: 18, svgWidth: 10 },
-  md: { text: "text-2xl", svgHeight: 24, svgWidth: 13 },
-  lg: { text: "text-4xl", svgHeight: 36, svgWidth: 20 },
+  sm: "text-lg",
+  md: "text-2xl",
+  lg: "text-4xl",
 };
 
 const variantMap = {
-  dark: { textClass: "text-foreground", boltFill: "#3D2BFF" },
-  light: { textClass: "text-white", boltFill: "#FFD60A" },
-  indigo: { textClass: "text-primary", boltFill: "#FFD60A" },
+  dark: { textClass: "text-foreground", accentClass: "text-primary" },
+  light: { textClass: "text-white", accentClass: "text-yellow-400" },
+  indigo: { textClass: "text-primary", accentClass: "text-yellow-400" },
 };
 
 export function BolticLogo({
@@ -24,64 +24,38 @@ export function BolticLogo({
   variant = "dark",
   size = "md",
 }: BolticLogoProps) {
-  const { text, svgHeight, svgWidth } = sizeMap[size];
-  const { textClass, boltFill } = variantMap[variant];
+  const textSize = sizeMap[size];
+  const { textClass, accentClass } = variantMap[variant];
 
   return (
     <Link
       href="/"
       className={cn(
-        "inline-flex items-center font-bold tracking-tight select-none no-underline",
-        text,
+        "inline-flex items-center font-bold tracking-tight select-none no-underline gap-1",
+        textSize,
         textClass,
         className
       )}
       style={{ fontFamily: "var(--font-display)" }}
       aria-label="Boltic — go to homepage"
     >
-      {/* "bolt" */}
-      <span>bolt</span>
-
-      {/* Custom "i" with lightning bolt dot */}
-      <span
-        className="relative inline-block"
-        style={{ width: `${svgWidth}px`, height: `${svgHeight}px` }}
+      {/* Lightning bolt icon */}
+      <svg
         aria-hidden="true"
+        viewBox="0 0 12 20"
+        width={size === "sm" ? 10 : size === "md" ? 13 : 18}
+        height={size === "sm" ? 16 : size === "md" ? 22 : 30}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="shrink-0"
       >
-        <svg
-          viewBox={`0 0 ${svgWidth} ${svgHeight}`}
-          width={svgWidth}
-          height={svgHeight}
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute inset-0"
-        >
-          {/* i stem — centered */}
-          <rect
-            x={svgWidth * 0.35}
-            y={svgHeight * 0.45}
-            width={svgWidth * 0.3}
-            height={svgHeight * 0.55}
-            fill="currentColor"
-          />
-          {/* Lightning bolt dot */}
-          <path
-            d={`
-              M ${svgWidth * 0.75} ${svgHeight * 0.02}
-              L ${svgWidth * 0.35} ${svgHeight * 0.32}
-              L ${svgWidth * 0.55} ${svgHeight * 0.32}
-              L ${svgWidth * 0.25} ${svgHeight * 0.55}
-              L ${svgWidth * 0.85} ${svgHeight * 0.22}
-              L ${svgWidth * 0.6} ${svgHeight * 0.22}
-              Z
-            `}
-            fill={boltFill}
-          />
-        </svg>
-      </span>
-
-      {/* "c" */}
-      <span>c</span>
+        <path
+          d="M7 0L0 11h5l-2 9L12 9H7L9 0z"
+          className={accentClass}
+          fill="currentColor"
+        />
+      </svg>
+      <span>Boltic</span>
     </Link>
   );
 }
