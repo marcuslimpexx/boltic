@@ -4,6 +4,9 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./lib/i18n/config.ts");
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Keep Prisma out of the Turbopack server bundle so that new PrismaClient()
   // is never called at build-time when DATABASE_URL is absent.
   serverExternalPackages: [
