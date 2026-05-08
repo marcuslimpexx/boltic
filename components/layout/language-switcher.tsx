@@ -1,11 +1,12 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
 export function LanguageSwitcher() {
   const locale = useLocale();
+  const t = useTranslations("nav");
   const router = useRouter();
   const pathname = usePathname();
 
@@ -20,7 +21,7 @@ export function LanguageSwitcher() {
       size="sm"
       onClick={toggleLocale}
       className="text-sm font-medium w-10"
-      aria-label="Switch language"
+      aria-label={t("switch_language")}
     >
       {locale === "vi" ? "EN" : "VI"}
     </Button>

@@ -22,17 +22,17 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <Link href="/products" className="hover:text-white transition-colors">
-                  Power Banks
+                  {t("power_banks")}
                 </Link>
               </li>
               <li>
                 <Link href="/products?sort=newest" className="hover:text-white transition-colors">
-                  New Arrivals
+                  {t("new_arrivals")}
                 </Link>
               </li>
               <li>
                 <Link href="/products?sort=best_selling" className="hover:text-white transition-colors">
-                  Best Sellers
+                  {t("best_sellers")}
                 </Link>
               </li>
             </ul>

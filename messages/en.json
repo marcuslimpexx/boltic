@@ -12,7 +12,8 @@
     "wishlist": "Wishlist",
     "logout": "Log out",
     "cart": "Cart",
-    "search": "Search products..."
+    "search": "Search products...",
+    "switch_language": "Switch language"
   },
   "home": {
     "hero_title": "Power, Delivered.",
@@ -54,7 +55,10 @@
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "refund": "Refund Policy",
-    "copyright": "© 2026 Boltic. All rights reserved."
+    "copyright": "© 2026 Boltic. All rights reserved.",
+    "power_banks": "Power Banks",
+    "new_arrivals": "New Arrivals",
+    "best_sellers": "Best Sellers"
   },
   "product": {
     "add_to_cart": "Add to cart",

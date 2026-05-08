@@ -12,7 +12,8 @@
     "wishlist": "Yêu thích",
     "logout": "Đăng xuất",
     "cart": "Giỏ hàng",
-    "search": "Tìm kiếm sản phẩm..."
+    "search": "Tìm kiếm sản phẩm...",
+    "switch_language": "Chuyển ngôn ngữ"
   },
   "home": {
     "hero_title": "Sạc thông minh, sống năng động",
@@ -54,7 +55,10 @@
     "terms": "Điều khoản dịch vụ",
     "privacy": "Chính sách bảo mật",
     "refund": "Chính sách hoàn tiền",
-    "copyright": "© 2026 Boltic. Bảo lưu mọi quyền."
+    "copyright": "© 2026 Boltic. Bảo lưu mọi quyền.",
+    "power_banks": "Pin dự phòng",
+    "new_arrivals": "Hàng mới về",
+    "best_sellers": "Bán chạy nhất"
   },
   "product": {
     "add_to_cart": "Thêm vào giỏ",
