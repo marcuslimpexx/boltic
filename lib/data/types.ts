@@ -40,7 +40,7 @@ export interface Product {
 }
 
 // ─── Seller ───────────────────────────────────────────────────────────────────
-export type SellerCountry = "VN" | "SG" | "TH" | "ID" | "MY" | "PH" | string;
+export type SellerCountry = "VN" | "SG" | "TH" | "ID" | "MY" | "PH" | (string & Record<never, never>);
 export type SellerStatus = "active" | "suspended";
 
 export interface Seller {

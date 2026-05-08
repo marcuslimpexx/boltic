@@ -7,7 +7,15 @@ export interface IOrderRepository {
   updateStatus(
     id: string,
     status: OrderStatus,
-    extra?: Partial<Order>
+    extra?: Partial<Pick<Order,
+      | "paidAt"
+      | "fulfilledAt"
+      | "deliveredAt"
+      | "trackingNumber"
+      | "trackingCourier"
+      | "paymentRef"
+      | "escrowReleaseAt"
+    >>
   ): Promise<Order | null>;
 }
 

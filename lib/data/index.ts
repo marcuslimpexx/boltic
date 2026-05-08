@@ -6,9 +6,11 @@ import {
   MockReviewRepository,
   MockWishlistRepository,
 } from "./repositories/mock/order.mock";
+import { MockSellerRepository } from "./repositories/mock/seller.mock";
 
 export const productRepo = new MockProductRepository();
 export const userRepo = new MockUserRepository();
 export const orderRepo = new MockOrderRepository();
 export const reviewRepo = new MockReviewRepository();
 export const wishlistRepo = new MockWishlistRepository();
+export const sellerRepo = new MockSellerRepository();
