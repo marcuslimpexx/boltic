@@ -63,6 +63,7 @@ export interface User {
   email: string;
   passwordHash: string;
   name: string;
+  role: "user" | "admin";
   phone: string | null;
   emailVerifiedAt: string | null;
   createdAt: string;

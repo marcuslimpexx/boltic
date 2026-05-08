@@ -22,6 +22,13 @@ export class MockOrderRepository implements IOrderRepository {
     );
   }
 
+  async findAllForAdmin(status?: OrderStatus): Promise<Order[]> {
+    if (status) {
+      return orders.filter((o) => o.status === status);
+    }
+    return [...orders];
+  }
+
   async create(data: Omit<Order, "id">): Promise<Order> {
     const order: Order = { ...data, id: `ord-${randomUUID()}` };
     orders.push(order);

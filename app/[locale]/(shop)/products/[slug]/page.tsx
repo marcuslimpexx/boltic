@@ -25,6 +25,20 @@ interface PageProps {
 }
 
 export const revalidate = 3600;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  try {
+    const result = await productRepo.findAll({ pageSize: 1000 });
+    const locales = ["vi", "en"] as const;
+    return result.items.flatMap((product) =>
+      locales.map((locale) => ({ locale, slug: product.slug }))
+    );
+  } catch {
+    // Database unavailable at build time — pages are generated on demand via ISR.
+    return [];
+  }
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params;

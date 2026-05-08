@@ -30,7 +30,7 @@ interface CheckoutFormProps {
   locale: string;
 }
 
-export function CheckoutForm({ locale: _locale }: CheckoutFormProps) {
+export function CheckoutForm({ locale }: CheckoutFormProps) {
   const t = useTranslations("checkout");
   const tCart = useTranslations("cart");
   const router = useRouter();
@@ -64,13 +64,23 @@ export function CheckoutForm({ locale: _locale }: CheckoutFormProps) {
 
   const onSubmit = async (data: CheckoutFormData) => {
     setServerError(null);
-    const result = await placeOrderAction({ formData: data, cartItems: items });
+    const result = await placeOrderAction({
+      formData: data,
+      cartItems: items,
+      locale,
+    });
     if (result.error) {
       setServerError(result.error);
       return;
     }
-    clearCart();
-    router.push(`/orders/${result.orderId}`);
+    if (result.paymentUrl) {
+      window.location.href = result.paymentUrl;
+      return;
+    }
+    if (result.orderId) {
+      clearCart();
+      router.push(`/orders/${result.orderId}`);
+    }
   };
 
   if (items.length === 0) {

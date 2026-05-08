@@ -3,6 +3,7 @@ import type { Order, OrderStatus, Review, WishlistItem } from "@/lib/data/types"
 export interface IOrderRepository {
   findById(id: string): Promise<Order | null>;
   findByUserId(userId: string, status?: OrderStatus): Promise<Order[]>;
+  findAllForAdmin(status?: OrderStatus): Promise<Order[]>;
   create(order: Omit<Order, "id">): Promise<Order>;
   updateStatus(
     id: string,

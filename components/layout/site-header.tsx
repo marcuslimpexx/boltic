@@ -13,41 +13,46 @@ export function SiteHeader() {
   const t = useTranslations("nav");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/60">
-      <div className="container mx-auto flex h-16 items-center gap-4 px-4">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-surface/90 backdrop-blur-md supports-[backdrop-filter]:bg-surface/70">
+      <div className="container mx-auto flex h-[60px] items-center gap-4 px-4">
         {/* Logo */}
         <BolticLogo size="md" />
 
         {/* Main nav — hidden on mobile */}
-        <MainNav className="hidden md:flex ml-8" />
+        <MainNav className="hidden md:flex ml-6" />
 
-        {/* Search bar */}
-        <div className="flex-1 max-w-sm mx-auto hidden md:flex items-center">
+        {/* Spacer + Search */}
+        <div className="flex-1 max-w-xs mx-auto hidden md:flex items-center">
           <SearchBar />
         </div>
 
         {/* Right actions */}
-        <div className="ml-auto flex items-center gap-1">
+        <div className="ml-auto flex items-center gap-0.5">
           <LanguageSwitcher />
+
           <Button
             variant="ghost"
             size="icon"
             aria-label={t("wishlist")}
+            className="h-9 w-9 text-muted-foreground hover:text-foreground"
             asChild
           >
             <Link href="/account/wishlist">
-              <Heart className="h-5 w-5" />
+              <Heart className="h-4.5 w-4.5" />
             </Link>
           </Button>
+
           <CartButton />
+
           <Button
             variant="ghost"
             size="icon"
             aria-label={t("account")}
+            className="h-9 w-9 text-muted-foreground hover:text-foreground"
             asChild
           >
             <Link href="/account">
-              <User className="h-5 w-5" />
+              <User className="h-4.5 w-4.5" />
             </Link>
           </Button>
         </div>

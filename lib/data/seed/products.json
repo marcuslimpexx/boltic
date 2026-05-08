@@ -16,21 +16,34 @@
     "compareAtPrice": 550000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/61QjXMm2VTL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/518ej8KjFtL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 12,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 180,
-      "dimensionsMm": { "l": 144, "w": 69, "h": 15 },
+      "dimensionsMm": {
+        "l": 144,
+        "w": 69,
+        "h": 15
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 48,
     "status": "active",
@@ -57,21 +70,35 @@
     "compareAtPrice": 890000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/516VucnwuUL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51CNC5C42mL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 15,
-      "inputPorts": ["Micro-USB", "USB-C"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB",
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 340,
-      "dimensionsMm": { "l": 162, "w": 73, "h": 22 },
+      "dimensionsMm": {
+        "l": 162,
+        "w": 73,
+        "h": 22
+      },
       "color": "White",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 120,
     "status": "active",
@@ -98,21 +125,35 @@
     "compareAtPrice": 1380000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/61jWG2JyYNL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61-HUnL0dBL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 25600,
       "outputWatts": 60,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 432,
-      "dimensionsMm": { "l": 170, "w": 80, "h": 22 },
+      "dimensionsMm": {
+        "l": 170,
+        "w": 80,
+        "h": 22
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 35,
     "status": "active",
@@ -139,21 +180,32 @@
     "compareAtPrice": 330000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/51-B6wJC49L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Sn62lz-PL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 5000,
       "outputWatts": 10,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 120,
-      "dimensionsMm": { "l": 97, "w": 54, "h": 23 },
+      "dimensionsMm": {
+        "l": 97,
+        "w": 54,
+        "h": 23
+      },
       "color": "Blue",
-      "certifications": ["CE", "FCC"]
+      "certifications": [
+        "CE",
+        "FCC"
+      ]
     },
     "stock": 200,
     "status": "active",
@@ -180,21 +232,36 @@
     "compareAtPrice": 1650000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/71Db4Cle1ML._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51lqekzSNjL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 26800,
       "outputWatts": 30,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 467,
-      "dimensionsMm": { "l": 170, "w": 78, "h": 23 },
+      "dimensionsMm": {
+        "l": 170,
+        "w": 78,
+        "h": 23
+      },
       "color": "Silver",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 42,
     "status": "active",
@@ -221,21 +288,34 @@
     "compareAtPrice": 650000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41u9zXGIecL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61QjXMm2VTL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 13000,
       "outputWatts": 18,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 268,
-      "dimensionsMm": { "l": 150, "w": 68, "h": 20 },
+      "dimensionsMm": {
+        "l": 150,
+        "w": 68,
+        "h": 20
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 88,
     "status": "active",
@@ -262,21 +342,35 @@
     "compareAtPrice": 1580000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/518ej8KjFtL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/516VucnwuUL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 24000,
       "outputWatts": 140,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 425,
-      "dimensionsMm": { "l": 168, "w": 78, "h": 28 },
+      "dimensionsMm": {
+        "l": 168,
+        "w": 78,
+        "h": 28
+      },
       "color": "Midnight Blue",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 29,
     "status": "active",
@@ -303,21 +397,35 @@
     "compareAtPrice": 2100000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/51CNC5C42mL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61jWG2JyYNL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 45000,
       "outputWatts": 90,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 672,
-      "dimensionsMm": { "l": 193, "w": 94, "h": 30 },
+      "dimensionsMm": {
+        "l": 193,
+        "w": 94,
+        "h": 30
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 18,
     "status": "active",
@@ -344,21 +452,34 @@
     "compareAtPrice": 620000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/61-HUnL0dBL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51-B6wJC49L._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 20,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 188,
-      "dimensionsMm": { "l": 145, "w": 68, "h": 17 },
+      "dimensionsMm": {
+        "l": 145,
+        "w": 68,
+        "h": 17
+      },
       "color": "White",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 76,
     "status": "active",
@@ -385,21 +506,34 @@
     "compareAtPrice": 730000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/71Sn62lz-PL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Db4Cle1ML._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 15000,
       "outputWatts": 18,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 292,
-      "dimensionsMm": { "l": 155, "w": 72, "h": 21 },
+      "dimensionsMm": {
+        "l": 155,
+        "w": 72,
+        "h": 21
+      },
       "color": "Graphite",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 55,
     "status": "active",
@@ -426,21 +560,33 @@
     "compareAtPrice": 680000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31P1Pb8J8dL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/417tzm5ZheL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 20,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": true,
       "passthrough": false,
       "weightGrams": 195,
-      "dimensionsMm": { "l": 145, "w": 70, "h": 18 },
+      "dimensionsMm": {
+        "l": 145,
+        "w": 70,
+        "h": 18
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 62,
     "status": "active",
@@ -467,21 +613,35 @@
     "compareAtPrice": 780000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41FW0rzJpkL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41lTW7Q1owL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 22,
-      "inputPorts": ["USB-C", "Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C",
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 318,
-      "dimensionsMm": { "l": 163, "w": 75, "h": 22 },
+      "dimensionsMm": {
+        "l": 163,
+        "w": 75,
+        "h": 22
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 104,
     "status": "active",
@@ -508,21 +668,34 @@
     "compareAtPrice": 1190000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/51360TJOmFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51x7QawDVqL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 30000,
       "outputWatts": 22,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 488,
-      "dimensionsMm": { "l": 176, "w": 82, "h": 26 },
+      "dimensionsMm": {
+        "l": 176,
+        "w": 82,
+        "h": 26
+      },
       "color": "Dark Blue",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 48,
     "status": "active",
@@ -549,21 +722,32 @@
     "compareAtPrice": 380000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31P1Pb8J8dL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41FW0rzJpkL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 5000,
       "outputWatts": 15,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 130,
-      "dimensionsMm": { "l": 102, "w": 57, "h": 22 },
+      "dimensionsMm": {
+        "l": 102,
+        "w": 57,
+        "h": 22
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 145,
     "status": "active",
@@ -590,21 +774,34 @@
     "compareAtPrice": 1280000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/417tzm5ZheL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41lTW7Q1owL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 30000,
       "outputWatts": 65,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 496,
-      "dimensionsMm": { "l": 178, "w": 83, "h": 26 },
+      "dimensionsMm": {
+        "l": 178,
+        "w": 83,
+        "h": 26
+      },
       "color": "Blue",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 36,
     "status": "active",
@@ -631,21 +828,33 @@
     "compareAtPrice": 690000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/51360TJOmFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31P1Pb8J8dL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 15000,
       "outputWatts": 20,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 285,
-      "dimensionsMm": { "l": 158, "w": 74, "h": 21 },
+      "dimensionsMm": {
+        "l": 158,
+        "w": 74,
+        "h": 21
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 92,
     "status": "active",
@@ -672,21 +881,35 @@
     "compareAtPrice": 1750000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/51x7QawDVqL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/417tzm5ZheL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 40000,
       "outputWatts": 65,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 595,
-      "dimensionsMm": { "l": 185, "w": 88, "h": 30 },
+      "dimensionsMm": {
+        "l": 185,
+        "w": 88,
+        "h": 30
+      },
       "color": "Silver",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 24,
     "status": "active",
@@ -713,21 +936,33 @@
     "compareAtPrice": 730000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41FW0rzJpkL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51360TJOmFL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 16000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 298,
-      "dimensionsMm": { "l": 160, "w": 74, "h": 21 },
+      "dimensionsMm": {
+        "l": 160,
+        "w": 74,
+        "h": 21
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 78,
     "status": "active",
@@ -754,21 +989,33 @@
     "compareAtPrice": 580000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41lTW7Q1owL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51x7QawDVqL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 12000,
       "outputWatts": 15,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 248,
-      "dimensionsMm": { "l": 152, "w": 70, "h": 20 },
+      "dimensionsMm": {
+        "l": 152,
+        "w": 70,
+        "h": 20
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 110,
     "status": "active",
@@ -795,21 +1042,32 @@
     "compareAtPrice": 420000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31P1Pb8J8dL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/417tzm5ZheL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 8000,
       "outputWatts": 10,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 168,
-      "dimensionsMm": { "l": 132, "w": 64, "h": 18 },
+      "dimensionsMm": {
+        "l": 132,
+        "w": 64,
+        "h": 18
+      },
       "color": "Rose Gold",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 132,
     "status": "active",
@@ -836,21 +1094,33 @@
     "compareAtPrice": 420000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31EQ6HRfzSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/414gU4LocTL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 10,
-      "inputPorts": ["USB-C", "Micro-USB"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "USB-C",
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 175,
-      "dimensionsMm": { "l": 141, "w": 68, "h": 16 },
+      "dimensionsMm": {
+        "l": 141,
+        "w": 68,
+        "h": 16
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 215,
     "status": "active",
@@ -877,21 +1147,34 @@
     "compareAtPrice": 720000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41PDUqdF5WS._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41XkATgLMfS._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C", "Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "USB-C",
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 320,
-      "dimensionsMm": { "l": 165, "w": 77, "h": 22 },
+      "dimensionsMm": {
+        "l": 165,
+        "w": 77,
+        "h": 22
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 180,
     "status": "active",
@@ -918,21 +1201,34 @@
     "compareAtPrice": 1100000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41gVWcwAqPL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61WXRf4WrlL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 25000,
       "outputWatts": 50,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 420,
-      "dimensionsMm": { "l": 168, "w": 79, "h": 24 },
+      "dimensionsMm": {
+        "l": 168,
+        "w": 79,
+        "h": 24
+      },
       "color": "Silver",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 58,
     "status": "active",
@@ -959,21 +1255,33 @@
     "compareAtPrice": 850000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31EQ6HRfzSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41PDUqdF5WS._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 18000,
       "outputWatts": 33,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 310,
-      "dimensionsMm": { "l": 159, "w": 74, "h": 22 },
+      "dimensionsMm": {
+        "l": 159,
+        "w": 74,
+        "h": 22
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 92,
     "status": "active",
@@ -1000,21 +1308,35 @@
     "compareAtPrice": 2000000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/414gU4LocTL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41XkATgLMfS._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 50000,
       "outputWatts": 100,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 645,
-      "dimensionsMm": { "l": 192, "w": 92, "h": 33 },
+      "dimensionsMm": {
+        "l": 192,
+        "w": 92,
+        "h": 33
+      },
       "color": "Dark Blue",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 15,
     "status": "active",
@@ -1041,21 +1363,32 @@
     "compareAtPrice": 350000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41gVWcwAqPL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31EQ6HRfzSL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 6000,
       "outputWatts": 10,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 132,
-      "dimensionsMm": { "l": 112, "w": 62, "h": 16 },
+      "dimensionsMm": {
+        "l": 112,
+        "w": 62,
+        "h": 16
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 168,
     "status": "active",
@@ -1082,21 +1415,34 @@
     "compareAtPrice": 1050000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/61WXRf4WrlL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/414gU4LocTL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 22000,
       "outputWatts": 45,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 368,
-      "dimensionsMm": { "l": 168, "w": 80, "h": 24 },
+      "dimensionsMm": {
+        "l": 168,
+        "w": 80,
+        "h": 24
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 42,
     "status": "active",
@@ -1123,21 +1469,33 @@
     "compareAtPrice": 800000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41PDUqdF5WS._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41gVWcwAqPL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 16000,
       "outputWatts": 12,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 295,
-      "dimensionsMm": { "l": 157, "w": 73, "h": 21 },
+      "dimensionsMm": {
+        "l": 157,
+        "w": 73,
+        "h": 21
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 88,
     "status": "active",
@@ -1164,21 +1522,35 @@
     "compareAtPrice": 1280000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31EQ6HRfzSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61WXRf4WrlL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 25000,
       "outputWatts": 100,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 430,
-      "dimensionsMm": { "l": 166, "w": 78, "h": 26 },
+      "dimensionsMm": {
+        "l": 166,
+        "w": 78,
+        "h": 26
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 32,
     "status": "active",
@@ -1205,21 +1577,35 @@
     "compareAtPrice": 800000,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41XkATgLMfS._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/414gU4LocTL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 330,
-      "dimensionsMm": { "l": 163, "w": 76, "h": 22 },
+      "dimensionsMm": {
+        "l": 163,
+        "w": 76,
+        "h": 22
+      },
       "color": "Graphite",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 65,
     "status": "active",
@@ -1246,21 +1632,36 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31f7pWDEwyL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/419TQs7kozL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 50000,
       "outputWatts": 130,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 698,
-      "dimensionsMm": { "l": 196, "w": 96, "h": 34 },
+      "dimensionsMm": {
+        "l": 196,
+        "w": 96,
+        "h": 34
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 12,
     "status": "active",
@@ -1287,21 +1688,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41HexnlDCfL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41RyMl21KML._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 186,
-      "dimensionsMm": { "l": 144, "w": 68, "h": 16 },
+      "dimensionsMm": {
+        "l": 144,
+        "w": 68,
+        "h": 16
+      },
       "color": "Navy",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 88,
     "status": "active",
@@ -1328,21 +1742,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41jaqKiBZBL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41p4YRpniPL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 15000,
       "outputWatts": 30,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 278,
-      "dimensionsMm": { "l": 156, "w": 73, "h": 21 },
+      "dimensionsMm": {
+        "l": 156,
+        "w": 73,
+        "h": 21
+      },
       "color": "White",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 72,
     "status": "active",
@@ -1369,21 +1796,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41segSSP4hL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41xSXsoULkL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 27000,
       "outputWatts": 65,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 456,
-      "dimensionsMm": { "l": 172, "w": 81, "h": 26 },
+      "dimensionsMm": {
+        "l": 172,
+        "w": 81,
+        "h": 26
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 28,
     "status": "active",
@@ -1410,21 +1851,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41yvQZwXeSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31f7pWDEwyL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 12000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 246,
-      "dimensionsMm": { "l": 151, "w": 71, "h": 20 },
+      "dimensionsMm": {
+        "l": 151,
+        "w": 71,
+        "h": 20
+      },
       "color": "Silver",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 95,
     "status": "active",
@@ -1451,21 +1905,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/419TQs7kozL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41HexnlDCfL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 25,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": true,
       "passthrough": false,
       "weightGrams": 348,
-      "dimensionsMm": { "l": 166, "w": 78, "h": 23 },
+      "dimensionsMm": {
+        "l": 166,
+        "w": 78,
+        "h": 23
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 48,
     "status": "active",
@@ -1492,21 +1960,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41RyMl21KML._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41jaqKiBZBL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 15,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 190,
-      "dimensionsMm": { "l": 143, "w": 68, "h": 17 },
+      "dimensionsMm": {
+        "l": 143,
+        "w": 68,
+        "h": 17
+      },
       "color": "White",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 124,
     "status": "active",
@@ -1533,21 +2014,36 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41p4YRpniPL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41segSSP4hL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 25000,
       "outputWatts": 45,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 428,
-      "dimensionsMm": { "l": 169, "w": 79, "h": 25 },
+      "dimensionsMm": {
+        "l": 169,
+        "w": 79,
+        "h": 25
+      },
       "color": "Graphite",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 35,
     "status": "active",
@@ -1574,21 +2070,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41xSXsoULkL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41yvQZwXeSL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 15000,
       "outputWatts": 25,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 288,
-      "dimensionsMm": { "l": 157, "w": 73, "h": 22 },
+      "dimensionsMm": {
+        "l": 157,
+        "w": 73,
+        "h": 22
+      },
       "color": "Blue",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 68,
     "status": "active",
@@ -1615,21 +2125,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31f7pWDEwyL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/419TQs7kozL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 12000,
       "outputWatts": 15,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": true,
       "passthrough": false,
       "weightGrams": 255,
-      "dimensionsMm": { "l": 153, "w": 71, "h": 20 },
+      "dimensionsMm": {
+        "l": 153,
+        "w": 71,
+        "h": 20
+      },
       "color": "White",
-      "certifications": ["CE", "FCC", "RoHS", "KC"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "KC"
+      ]
     },
     "stock": 82,
     "status": "active",
@@ -1656,21 +2179,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31bEZFeXCdL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31dXRbVnT0L._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 30000,
       "outputWatts": 61,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 495,
-      "dimensionsMm": { "l": 178, "w": 84, "h": 27 },
+      "dimensionsMm": {
+        "l": 178,
+        "w": 84,
+        "h": 27
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 22,
     "status": "active",
@@ -1697,21 +2234,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/415zHs3AnzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41C9gGz9hvL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 182,
-      "dimensionsMm": { "l": 142, "w": 68, "h": 17 },
+      "dimensionsMm": {
+        "l": 142,
+        "w": 68,
+        "h": 17
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 56,
     "status": "active",
@@ -1738,21 +2288,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41EzoXWOjQL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41mQgBF5TOL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 18,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 345,
-      "dimensionsMm": { "l": 165, "w": 77, "h": 23 },
+      "dimensionsMm": {
+        "l": 165,
+        "w": 77,
+        "h": 23
+      },
       "color": "Silver",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 42,
     "status": "active",
@@ -1779,21 +2343,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31bEZFeXCdL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/415zHs3AnzL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 16000,
       "outputWatts": 30,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 302,
-      "dimensionsMm": { "l": 158, "w": 73, "h": 21 },
+      "dimensionsMm": {
+        "l": 158,
+        "w": 73,
+        "h": 21
+      },
       "color": "Black",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 68,
     "status": "active",
@@ -1820,21 +2397,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31dXRbVnT0L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41C9gGz9hvL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 40000,
       "outputWatts": 90,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": true,
       "weightGrams": 598,
-      "dimensionsMm": { "l": 188, "w": 90, "h": 30 },
+      "dimensionsMm": {
+        "l": 188,
+        "w": 90,
+        "h": 30
+      },
       "color": "Dark Blue",
-      "certifications": ["CE", "FCC", "RoHS"]
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS"
+      ]
     },
     "stock": 18,
     "status": "active",
@@ -1861,21 +2452,33 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41EzoXWOjQL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41mQgBF5TOL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 20000,
       "outputWatts": 10,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 345,
-      "dimensionsMm": { "l": 164, "w": 77, "h": 22 },
+      "dimensionsMm": {
+        "l": 164,
+        "w": 77,
+        "h": 22
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 0,
     "status": "out_of_stock",
@@ -1902,21 +2505,35 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1601972602237-96b0a027f4e8?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/31bEZFeXCdL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31dXRbVnT0L._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 30000,
       "outputWatts": 15,
-      "inputPorts": ["Micro-USB", "USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB",
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 492,
-      "dimensionsMm": { "l": 177, "w": 83, "h": 27 },
+      "dimensionsMm": {
+        "l": 177,
+        "w": 83,
+        "h": 27
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 0,
     "status": "out_of_stock",
@@ -1943,21 +2560,33 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1559311745-cbf34c01c28a?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/415zHs3AnzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41C9gGz9hvL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 10000,
       "outputWatts": 10,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 198,
-      "dimensionsMm": { "l": 146, "w": 70, "h": 18 },
+      "dimensionsMm": {
+        "l": 146,
+        "w": 70,
+        "h": 18
+      },
       "color": "White",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 0,
     "status": "out_of_stock",
@@ -1984,21 +2613,33 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1609592424738-a19e66a1c7ac?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583864697784-a0efc8379f70?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41EzoXWOjQL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31bEZFeXCdL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 15000,
       "outputWatts": 12,
-      "inputPorts": ["Micro-USB"],
-      "outputPorts": ["USB-A", "USB-A"],
+      "inputPorts": [
+        "Micro-USB"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A"
+      ],
       "fastCharging": false,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 282,
-      "dimensionsMm": { "l": 154, "w": 72, "h": 21 },
+      "dimensionsMm": {
+        "l": 154,
+        "w": 72,
+        "h": 21
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 50,
     "status": "draft",
@@ -2025,21 +2666,34 @@
     "compareAtPrice": null,
     "currency": "VND",
     "images": [
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800&auto=format&fit=crop"
+      "https://m.media-amazon.com/images/I/41mQgBF5TOL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/415zHs3AnzL._AC_SL1500_.jpg"
     ],
     "attributes": {
       "capacityMah": 40000,
       "outputWatts": 65,
-      "inputPorts": ["USB-C"],
-      "outputPorts": ["USB-A", "USB-A", "USB-C"],
+      "inputPorts": [
+        "USB-C"
+      ],
+      "outputPorts": [
+        "USB-A",
+        "USB-A",
+        "USB-C"
+      ],
       "fastCharging": true,
       "wirelessCharging": false,
       "passthrough": false,
       "weightGrams": 582,
-      "dimensionsMm": { "l": 184, "w": 87, "h": 30 },
+      "dimensionsMm": {
+        "l": 184,
+        "w": 87,
+        "h": 30
+      },
       "color": "Black",
-      "certifications": ["CE", "RoHS"]
+      "certifications": [
+        "CE",
+        "RoHS"
+      ]
     },
     "stock": 30,
     "status": "draft",

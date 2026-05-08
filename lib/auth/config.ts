@@ -38,15 +38,22 @@ export const authConfig: NextAuthConfig = {
     error: "/login",
   },
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, account }) {
       if (user?.id) {
         token["userId"] = user.id;
+      }
+      if (account) {
+        const dbUser = await userRepo.findById(user?.id ?? token.sub ?? "");
+        token.role = (dbUser?.role ?? "user") as "user" | "admin";
       }
       return token;
     },
     async session({ session, token }) {
       if (session.user && token["userId"]) {
         (session.user as { id?: string }).id = token["userId"] as string;
+      }
+      if (session.user) {
+        session.user.role = (token.role as "user" | "admin") ?? "user";
       }
       return session;
     },

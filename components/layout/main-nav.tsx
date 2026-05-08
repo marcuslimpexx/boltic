@@ -24,7 +24,7 @@ export function MainNav({ className }: MainNavProps) {
         <Link
           key={href}
           href={href}
-          className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
         >
           {t(labelKey)}
         </Link>

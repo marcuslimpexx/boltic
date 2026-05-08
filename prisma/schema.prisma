@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id              String    @id @default(cuid())
+  email           String    @unique
+  passwordHash    String
+  name            String
+  phone           String?
+  role            String    @default("user")
+  emailVerifiedAt DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  addresses     Address[]
+  orders        Order[]
+  reviews       Review[]
+  wishlistItems WishlistItem[]
+}
+
+model Address {
+  id           String  @id @default(cuid())
+  userId       String
+  fullName     String
+  phone        String
+  email        String
+  addressLine1 String
+  addressLine2 String?
+  ward         String
+  district     String
+  province     String
+  postalCode   String
+  isDefault    Boolean @default(false)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Seller {
+  id          String   @id @default(cuid())
+  legalName   String
+  displayName String
+  country     String
+  bankAccount Json
+  status      String   @default("active")
+  createdAt   DateTime @default(now())
+
+  products Product[]
+}
+
+model Product {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  nameEn         String
+  nameVi         String
+  descriptionEn  String
+  descriptionVi  String
+  brand          String
+  sellerId       String
+  price          Int
+  compareAtPrice Int?
+  currency       String   @default("VND")
+  images         Json
+  attributes     Json
+  stock          Int      @default(0)
+  status         String   @default("active")
+  ratingAvg      Float    @default(0)
+  ratingCount    Int      @default(0)
+  salesCount     Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  seller        Seller         @relation(fields: [sellerId], references: [id])
+  reviews       Review[]
+  wishlistItems WishlistItem[]
+}
+
+model Order {
+  id              String    @id @default(cuid())
+  userId          String
+  items           Json
+  shippingAddress Json
+  shippingMethod  Json
+  subtotal        Int
+  shippingCost    Int
+  total           Int
+  currency        String    @default("VND")
+  paymentMethod   String
+  paymentRef      String?
+  status          String    @default("pending_payment")
+  trackingNumber  String?
+  trackingCourier String?
+  placedAt        DateTime  @default(now())
+  paidAt          DateTime?
+  fulfilledAt     DateTime?
+  deliveredAt     DateTime?
+  escrowReleaseAt DateTime?
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Review {
+  id               String   @id @default(cuid())
+  productId        String
+  userId           String
+  userName         String
+  rating           Int
+  text             String?
+  photos           Json
+  verifiedPurchase Boolean  @default(false)
+  helpfulCount     Int      @default(0)
+  reportedCount    Int      @default(0)
+  status           String   @default("published")
+  createdAt        DateTime @default(now())
+
+  product Product @relation(fields: [productId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
+}
+
+model WishlistItem {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  addedAt   DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id])
+
+  @@unique([userId, productId])
+}

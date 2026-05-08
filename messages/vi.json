@@ -252,7 +252,19 @@
     "wishlist": "Danh sách yêu thích",
     "wishlist_desc": "Sản phẩm bạn đã lưu",
     "settings": "Cài đặt tài khoản",
-    "settings_desc": "Cập nhật thông tin cá nhân",
+    "settings_desc": "Cập nhật thông tin cá nhân và mật khẩu",
+    "profile_section": "Thông tin cá nhân",
+    "password_section": "Đổi mật khẩu",
+    "display_name": "Tên hiển thị",
+    "email_label": "Email",
+    "current_password": "Mật khẩu hiện tại",
+    "new_password": "Mật khẩu mới",
+    "confirm_new_password": "Xác nhận mật khẩu mới",
+    "save_changes": "Lưu thay đổi",
+    "profile_updated": "Cập nhật hồ sơ thành công",
+    "password_changed": "Đổi mật khẩu thành công",
+    "wrong_password": "Mật khẩu hiện tại không đúng",
+    "passwords_no_match": "Mật khẩu không khớp",
     "logout": "Đăng xuất"
   }
 }

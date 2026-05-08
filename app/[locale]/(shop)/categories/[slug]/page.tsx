@@ -45,6 +45,14 @@ function getStr(val: string | string[] | undefined, fallback = ""): string {
   return val ?? fallback;
 }
 
+export function generateStaticParams() {
+  const slugs = ["power-banks", "compact", "standard", "high-capacity", "mega"];
+  const locales = ["vi", "en"];
+  return slugs.flatMap((slug) =>
+    locales.map((locale) => ({ locale, slug }))
+  );
+}
+
 export default async function CategoryPage({
   params,
   searchParams,

@@ -26,6 +26,7 @@ export class MockUserRepository implements IUserRepository {
       email: data.email,
       passwordHash: data.passwordHash,
       name: data.name,
+      role: "user",
       phone: null,
       emailVerifiedAt: null,
       createdAt: now,

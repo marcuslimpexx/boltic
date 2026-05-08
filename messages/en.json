@@ -251,8 +251,20 @@
     "orders_desc": "Track and manage your orders",
     "wishlist": "My wishlist",
     "wishlist_desc": "Products you've saved",
-    "settings": "Account settings",
+    "settings": "Account Settings",
     "settings_desc": "Update your profile and password",
+    "profile_section": "Profile",
+    "password_section": "Change Password",
+    "display_name": "Display Name",
+    "email_label": "Email",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password",
+    "save_changes": "Save Changes",
+    "profile_updated": "Profile updated successfully",
+    "password_changed": "Password changed successfully",
+    "wrong_password": "Current password is incorrect",
+    "passwords_no_match": "Passwords do not match",
     "logout": "Log out"
   }
 }

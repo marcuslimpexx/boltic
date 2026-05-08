@@ -10,6 +10,7 @@ import {
 } from "./schemas";
 import { signIn } from "./config";
 import { AuthError } from "next-auth";
+import { sendPasswordResetEmail } from "@/lib/email";
 
 export async function registerAction(formData: FormData) {
   const parsed = registerSchema.safeParse({
@@ -67,9 +68,12 @@ export async function forgotPasswordAction(formData: FormData) {
   const secret = process.env.AUTH_SECRET ?? "dev-secret";
   const payload = `${user.id}:${Date.now()}`;
   const sig = createHmac("sha256", secret).update(payload).digest("hex");
-  const stubToken = Buffer.from(`${payload}:${sig}`).toString("base64url");
-  console.log(`[AUTH] Password reset token for ${email}: ${stubToken}`);
-  console.log(`[AUTH] Reset URL: /reset-password?token=${stubToken}`);
+  const token = Buffer.from(`${payload}:${sig}`).toString("base64url");
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  // The locale is not available in this server action directly; default to "vi" for reset emails
+  // (the reset-password page works regardless of locale)
+  const resetUrl = `${siteUrl}/vi/reset-password?token=${token}`;
+  await sendPasswordResetEmail(email, resetUrl, "vi");
 
   return { success: true };
 }

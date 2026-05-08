@@ -36,6 +36,7 @@ export function BolticLogo({
         textClass,
         className
       )}
+      style={{ fontFamily: "var(--font-display)" }}
       aria-label="Boltic — go to homepage"
     >
       {/* "bolt" */}
