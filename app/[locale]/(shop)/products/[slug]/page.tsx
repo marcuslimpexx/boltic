@@ -4,12 +4,15 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { productRepo, sellerRepo } from "@/lib/data";
+import { auth } from "@/lib/auth/config";
 import { ProductGallery } from "@/components/product/product-gallery";
 import { ProductSpecsTable } from "@/components/product/product-specs-table";
 import { ProductBreadcrumb } from "@/components/product/product-breadcrumb";
 import { RelatedProducts } from "@/components/product/related-products";
 import { AddToCartButton } from "@/components/product/add-to-cart-button";
 import { WishlistButton } from "@/components/product/wishlist-button";
+import { ReviewList } from "@/components/product/review-list";
+import { ReviewForm } from "@/components/product/review-form";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -56,11 +59,13 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const product = await productRepo.findBySlug(slug);
   if (!product) notFound();
 
-  const [seller, t, tProduct] = await Promise.all([
+  const [seller, t, tProduct, session] = await Promise.all([
     sellerRepo.findById(product.sellerId),
     getTranslations({ locale, namespace: "product_detail" }),
     getTranslations({ locale, namespace: "product" }),
+    auth(),
   ]);
+  const isLoggedIn = !!session?.user?.id;
 
   const name = locale === "vi" ? product.name.vi : product.name.en;
   const description =
@@ -258,32 +263,20 @@ export default async function ProductDetailPage({ params }: PageProps) {
               <p>7-day return window from delivery. Items must be unused and in original packaging.</p>
             </TabsContent>
 
-            <TabsContent value="reviews" className="text-sm">
-              {product.ratingCount === 0 ? (
-                <p className="text-muted-foreground">{t("no_reviews")}</p>
-              ) : (
-                <div className="flex items-center gap-4">
-                  <div className="text-center">
-                    <p className="text-5xl font-bold">{product.ratingAvg.toFixed(1)}</p>
-                    <div className="flex items-center justify-center gap-0.5 mt-1">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <Star
-                          key={i}
-                          className={cn(
-                            "h-4 w-4",
-                            i < Math.floor(product.ratingAvg)
-                              ? "fill-yellow-400 text-yellow-400"
-                              : "text-border"
-                          )}
-                        />
-                      ))}
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {product.ratingCount} reviews
-                    </p>
-                  </div>
-                </div>
-              )}
+            <TabsContent value="reviews" className="space-y-6">
+              <Suspense fallback={<p className="text-sm text-muted-foreground">Loading reviews...</p>}>
+                <ReviewList
+                  productId={product.id}
+                  ratingAvg={product.ratingAvg}
+                  ratingCount={product.ratingCount}
+                  locale={locale}
+                />
+              </Suspense>
+              <ReviewForm
+                productId={product.id}
+                productSlug={product.slug}
+                isLoggedIn={isLoggedIn}
+              />
             </TabsContent>
           </Tabs>
         </div>
