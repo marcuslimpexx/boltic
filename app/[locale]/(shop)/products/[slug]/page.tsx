@@ -204,6 +204,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
             <div className="flex gap-3">
               <AddToCartButton
                 productId={product.id}
+                slug={product.slug}
+                name={product.name.en}
+                image={product.images[0] ?? ""}
+                price={product.price}
                 label={tProduct("add_to_cart")}
                 className="flex-1"
                 disabled={isOutOfStock}
@@ -214,6 +218,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
             {!isOutOfStock && (
               <AddToCartButton
                 productId={product.id}
+                slug={product.slug}
+                name={product.name.en}
+                image={product.images[0] ?? ""}
+                price={product.price}
                 label={tProduct("buy_now")}
                 variant="outline"
                 className="w-full"

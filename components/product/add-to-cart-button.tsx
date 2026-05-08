@@ -3,9 +3,14 @@
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useCartStore } from "@/lib/store/cart";
 
 interface AddToCartButtonProps {
   productId: string;
+  slug: string;
+  name: string;
+  image: string;
+  price: number;
   label?: string;
   variant?: "default" | "outline";
   className?: string;
@@ -13,15 +18,20 @@ interface AddToCartButtonProps {
 }
 
 export function AddToCartButton({
-  productId: _productId,
+  productId,
+  slug,
+  name,
+  image,
+  price,
   label = "Add to cart",
   variant = "default",
   className,
   disabled = false,
 }: AddToCartButtonProps) {
+  const addItem = useCartStore((s) => s.addItem);
+
   const handleClick = () => {
-    // TODO Phase 3: dispatch to Zustand cart store
-    console.log("[CART] Add to cart stub — productId:", _productId);
+    addItem({ productId, slug, name, image, price });
   };
 
   return (

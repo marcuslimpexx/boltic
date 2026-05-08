@@ -108,6 +108,10 @@ export function ProductCard({ product, locale, className }: ProductCardProps) {
         {!isOutOfStock && (
           <AddToCartButton
             productId={product.id}
+            slug={product.slug}
+            name={product.name.en}
+            image={primaryImage}
+            price={product.price}
             label="Add to cart"
             variant="outline"
             className="w-full text-xs h-8 mt-1"

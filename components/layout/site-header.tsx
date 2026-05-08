@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { ShoppingCart, Heart, User } from "lucide-react";
+import { Heart, User } from "lucide-react";
 import { BolticLogo } from "./boltic-logo";
 import { MainNav } from "./main-nav";
 import { LanguageSwitcher } from "./language-switcher";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/search/search-bar";
+import { CartButton } from "@/components/cart/cart-button";
+import { CartDrawer } from "@/components/cart/cart-drawer";
 
 export function SiteHeader() {
   const t = useTranslations("nav");
@@ -37,16 +39,7 @@ export function SiteHeader() {
               <Heart className="h-5 w-5" />
             </Link>
           </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            aria-label={t("cart")}
-            asChild
-          >
-            <Link href="/cart">
-              <ShoppingCart className="h-5 w-5" />
-            </Link>
-          </Button>
+          <CartButton />
           <Button
             variant="ghost"
             size="icon"
@@ -59,6 +52,7 @@ export function SiteHeader() {
           </Button>
         </div>
       </div>
+      <CartDrawer />
     </header>
   );
 }
