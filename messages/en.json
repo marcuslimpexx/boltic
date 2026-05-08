@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Log in",
+    "register": "Sign up",
+    "account": "Account",
+    "orders": "Orders",
+    "wishlist": "Wishlist",
+    "logout": "Log out",
+    "cart": "Cart",
+    "search": "Search products..."
+  },
+  "home": {
+    "hero_title": "Power, Delivered.",
+    "hero_subtitle": "Genuine power banks, delivered across Vietnam",
+    "hero_cta": "Shop now",
+    "featured_title": "Featured products",
+    "categories_title": "Categories"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Full name",
+    "login_title": "Log in",
+    "register_title": "Create account",
+    "forgot_password": "Forgot password?",
+    "forgot_title": "Reset your password",
+    "reset_title": "Set new password",
+    "login_cta": "Log in",
+    "register_cta": "Sign up",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "send_reset": "Send reset email",
+    "reset_cta": "Reset password",
+    "email_sent": "If an account exists, a reset email has been sent.",
+    "invalid_credentials": "Invalid email or password.",
+    "email_taken": "This email is already in use.",
+    "password_min": "Password must be at least 8 characters.",
+    "name_min": "Name must be at least 2 characters."
+  },
+  "footer": {
+    "powered_by": "Operated by PEXX Technology PTE Ltd",
+    "shop": "Shop",
+    "help": "Help",
+    "legal": "Legal",
+    "shipping_policy": "Shipping Policy",
+    "returns": "Returns",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "refund": "Refund Policy",
+    "copyright": "© 2026 Boltic. All rights reserved."
+  },
+  "product": {
+    "add_to_cart": "Add to cart",
+    "add_to_wishlist": "Wishlist",
+    "buy_now": "Buy now",
+    "in_stock": "In stock",
+    "out_of_stock": "Out of stock",
+    "reviews": "Reviews",
+    "description": "Description",
+    "specifications": "Specifications",
+    "shipping_returns": "Shipping & Returns",
+    "related": "Related products"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "not_found": "Not found",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "vnd_format": "₫"
+  }
+}

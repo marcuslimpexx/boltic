@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "categories": "Danh mục",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "account": "Tài khoản",
+    "orders": "Đơn hàng",
+    "wishlist": "Yêu thích",
+    "logout": "Đăng xuất",
+    "cart": "Giỏ hàng",
+    "search": "Tìm kiếm sản phẩm..."
+  },
+  "home": {
+    "hero_title": "Sạc thông minh, sống năng động",
+    "hero_subtitle": "Pin dự phòng chính hãng, giao hàng toàn quốc",
+    "hero_cta": "Khám phá sản phẩm",
+    "featured_title": "Sản phẩm nổi bật",
+    "categories_title": "Danh mục"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Mật khẩu",
+    "name": "Họ và tên",
+    "login_title": "Đăng nhập",
+    "register_title": "Tạo tài khoản",
+    "forgot_password": "Quên mật khẩu?",
+    "forgot_title": "Đặt lại mật khẩu",
+    "reset_title": "Mật khẩu mới",
+    "login_cta": "Đăng nhập",
+    "register_cta": "Đăng ký",
+    "no_account": "Chưa có tài khoản?",
+    "have_account": "Đã có tài khoản?",
+    "send_reset": "Gửi email đặt lại",
+    "reset_cta": "Đặt lại mật khẩu",
+    "email_sent": "Email đặt lại đã được gửi nếu tài khoản tồn tại.",
+    "invalid_credentials": "Email hoặc mật khẩu không đúng.",
+    "email_taken": "Email này đã được sử dụng.",
+    "password_min": "Mật khẩu phải có ít nhất 8 ký tự.",
+    "name_min": "Tên phải có ít nhất 2 ký tự."
+  },
+  "footer": {
+    "powered_by": "Vận hành bởi PEXX Technology PTE Ltd",
+    "shop": "Mua sắm",
+    "help": "Hỗ trợ",
+    "legal": "Pháp lý",
+    "shipping_policy": "Chính sách vận chuyển",
+    "returns": "Đổi trả",
+    "faq": "FAQ",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản dịch vụ",
+    "privacy": "Chính sách bảo mật",
+    "refund": "Chính sách hoàn tiền",
+    "copyright": "© 2026 Boltic. Bảo lưu mọi quyền."
+  },
+  "product": {
+    "add_to_cart": "Thêm vào giỏ",
+    "add_to_wishlist": "Yêu thích",
+    "buy_now": "Mua ngay",
+    "in_stock": "Còn hàng",
+    "out_of_stock": "Hết hàng",
+    "reviews": "Đánh giá",
+    "description": "Mô tả",
+    "specifications": "Thông số",
+    "shipping_returns": "Vận chuyển & Đổi trả",
+    "related": "Sản phẩm liên quan"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "not_found": "Không tìm thấy",
+    "back": "Quay lại",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "vnd_format": "₫"
+  }
+}
