@@ -1,17 +1,16 @@
 /**
- * Edge-Runtime middleware — zero @/ path-alias imports.
+ * Edge-Runtime middleware — no external JWT libraries, no @/ path aliases.
  *
- * Vercel's Edge Function bundler cannot resolve project-local @/ aliases, so
- * everything that was previously imported from @/i18n/routing or
- * @/lib/auth/edge.config is inlined here.  Auth is verified with
- * @auth/core/jwt (pure Web Crypto — no Node.js crypto module needed).
+ * Route protection uses a lightweight cookie-existence check.  All actual
+ * authorisation (role check, session validity) is enforced server-side in
+ * the page components and Server Actions — this layer just handles the
+ * redirect UX for unauthenticated visitors.
  */
 import createMiddleware from "next-intl/middleware";
-import { decode } from "@auth/core/jwt";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-// ── Routing config (mirrors @/i18n/routing) ──────────────────────────────────
+// ── Inline routing config (mirrors @/i18n/routing) ───────────────────────────
 const LOCALES = ["vi", "en"] as const;
 type Locale = (typeof LOCALES)[number];
 const DEFAULT_LOCALE: Locale = "vi";
@@ -23,9 +22,8 @@ const intlMiddleware = createMiddleware({
   localeDetection: false,
 });
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-const ADMIN_PATHS = ["/admin"];
-const PROTECTED_PATHS = ["/account", "/checkout"];
+// ── Route guards ──────────────────────────────────────────────────────────────
+const PROTECTED_PREFIXES = ["/admin", "/account", "/checkout"];
 
 function localeFromPathname(pathname: string): Locale {
   const seg = pathname.split("/")[1] ?? "";
@@ -34,65 +32,30 @@ function localeFromPathname(pathname: string): Locale {
     : DEFAULT_LOCALE;
 }
 
-async function getSession(
-  request: NextRequest
-): Promise<{ role?: string } | null> {
-  const secret = process.env.AUTH_SECRET;
-  if (!secret) return null;
-
-  const isSecure = request.url.startsWith("https://");
-  const secureName = "__Secure-authjs.session-token";
-  const plainName = "authjs.session-token";
-  const cookieName = isSecure ? secureName : plainName;
-
-  const tokenValue =
-    request.cookies.get(cookieName)?.value ??
-    request.cookies.get(isSecure ? plainName : secureName)?.value;
-
-  if (!tokenValue) return null;
-
-  try {
-    const payload = await decode({
-      token: tokenValue,
-      secret,
-      salt: cookieName,
-    });
-    return payload as { role?: string } | null;
-  } catch {
-    return null;
-  }
+function isAuthenticated(request: NextRequest): boolean {
+  // NextAuth v5 sets one of these two cookies
+  return (
+    request.cookies.has("authjs.session-token") ||
+    request.cookies.has("__Secure-authjs.session-token")
+  );
 }
 
-// ── Middleware ────────────────────────────────────────────────────────────────
-export default async function middleware(request: NextRequest) {
+// ── Handler ───────────────────────────────────────────────────────────────────
+export default function middleware(request: NextRequest): NextResponse {
   const { pathname } = request.nextUrl;
 
-  const pathnameWithoutLocale = pathname.replace(/^\/(vi|en)/, "");
+  // Strip locale prefix to check route type
+  const bare = pathname.replace(/^\/(vi|en)/, "");
+  const needsAuth = PROTECTED_PREFIXES.some((p) => bare.startsWith(p));
 
-  const isAdmin = ADMIN_PATHS.some((p) =>
-    pathnameWithoutLocale.startsWith(p)
-  );
-  const isProtected = PROTECTED_PATHS.some((p) =>
-    pathnameWithoutLocale.startsWith(p)
-  );
-
-  if (isAdmin || isProtected) {
-    const session = await getSession(request);
-
-    if (!session) {
-      const locale = localeFromPathname(pathname);
-      const loginUrl = new URL(`/${locale}/login`, request.url);
-      loginUrl.searchParams.set("callbackUrl", pathname);
-      return NextResponse.redirect(loginUrl);
-    }
-
-    if (isAdmin && session.role !== "admin") {
-      const locale = localeFromPathname(pathname);
-      return NextResponse.redirect(new URL(`/${locale}`, request.url));
-    }
+  if (needsAuth && !isAuthenticated(request)) {
+    const locale = localeFromPathname(pathname);
+    const loginUrl = new URL(`/${locale}/login`, request.url);
+    loginUrl.searchParams.set("callbackUrl", pathname);
+    return NextResponse.redirect(loginUrl);
   }
 
-  return intlMiddleware(request);
+  return intlMiddleware(request) as NextResponse;
 }
 
 export const config = {
