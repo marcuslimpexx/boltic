@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -27,6 +27,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     title: {
@@ -58,6 +59,9 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as "vi" | "en")) {
     notFound();
   }
+
+  // Establish locale from URL param (no middleware header required)
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
