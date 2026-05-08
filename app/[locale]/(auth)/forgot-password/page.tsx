@@ -24,6 +24,7 @@ import { BolticLogo } from "@/components/layout/boltic-logo";
 export default function ForgotPasswordPage() {
   const t = useTranslations("auth");
   const [sent, setSent] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const {
     register,
@@ -34,10 +35,15 @@ export default function ForgotPasswordPage() {
   });
 
   const onSubmit = async (data: ForgotPasswordInput) => {
+    setServerError(null);
     const fd = new FormData();
     fd.append("email", data.email);
-    await forgotPasswordAction(fd);
-    setSent(true);
+    const result = await forgotPasswordAction(fd);
+    if (result?.error) {
+      setServerError(result.error);
+    } else {
+      setSent(true);
+    }
   };
 
   return (
@@ -75,6 +81,11 @@ export default function ForgotPasswordPage() {
                   <p className="text-xs text-error">{errors.email.message}</p>
                 )}
               </div>
+              {serverError && (
+                <p className="text-sm text-error text-center" role="alert">
+                  {serverError}
+                </p>
+              )}
               <Button
                 type="submit"
                 className="w-full"

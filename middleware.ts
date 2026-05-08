@@ -12,7 +12,8 @@ export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Strip locale prefix to get bare path
-  const pathnameWithoutLocale = pathname.replace(/^\/(vi|en)/, "");
+  const localePattern = new RegExp(`^/(${routing.locales.join("|")})`);
+  const pathnameWithoutLocale = pathname.replace(localePattern, "");
 
   const isProtected = PROTECTED_PATTERNS.some((pattern) =>
     pathnameWithoutLocale.startsWith(pattern)

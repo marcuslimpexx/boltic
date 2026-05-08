@@ -1,6 +1,7 @@
 "use server";
 
 import bcrypt from "bcryptjs";
+import { createHmac, timingSafeEqual } from "crypto";
 import { userRepo } from "@/lib/data";
 import {
   registerSchema,
@@ -57,15 +58,18 @@ export async function forgotPasswordAction(formData: FormData) {
   const { email } = parsed.data;
   const user = await userRepo.findByEmail(email);
 
-  if (user) {
-    const stubToken = Buffer.from(`${user.id}:${Date.now()}`).toString(
-      "base64"
-    );
-    console.log(`[AUTH] Password reset token for ${email}: ${stubToken}`);
-    console.log(
-      `[AUTH] Reset URL: /reset-password?token=${stubToken}`
-    );
+  if (!user) {
+    // Constant-time operation to prevent timing-based user enumeration
+    await bcrypt.hash("constant-time-noop", 10);
+    return { success: true };
   }
+
+  const secret = process.env.AUTH_SECRET ?? "dev-secret";
+  const payload = `${user.id}:${Date.now()}`;
+  const sig = createHmac("sha256", secret).update(payload).digest("hex");
+  const stubToken = Buffer.from(`${payload}:${sig}`).toString("base64url");
+  console.log(`[AUTH] Password reset token for ${email}: ${stubToken}`);
+  console.log(`[AUTH] Reset URL: /reset-password?token=${stubToken}`);
 
   return { success: true };
 }
@@ -86,11 +90,26 @@ export async function resetPasswordAction(formData: FormData) {
 
   let userId: string;
   try {
-    const decoded = Buffer.from(token, "base64").toString("utf-8");
-    const parts = decoded.split(":");
+    const decoded = Buffer.from(token, "base64url").toString("utf-8");
+    // Format: userId:timestamp:hmac_signature
+    const lastColon = decoded.lastIndexOf(":");
+    const payload = decoded.slice(0, lastColon);
+    const providedSig = decoded.slice(lastColon + 1);
+
+    const secret = process.env.AUTH_SECRET ?? "dev-secret";
+    const expectedSig = createHmac("sha256", secret).update(payload).digest("hex");
+
+    // Constant-time comparison to prevent timing attacks
+    const sigBuffer = Buffer.from(providedSig, "hex");
+    const expectedBuffer = Buffer.from(expectedSig, "hex");
+    if (sigBuffer.length !== expectedBuffer.length || !timingSafeEqual(sigBuffer, expectedBuffer)) {
+      return { error: "Invalid or expired token" };
+    }
+
+    const parts = payload.split(":");
     const id = parts[0];
     const tsStr = parts[1];
-    if (!id || !tsStr) throw new Error("Invalid token format");
+    if (!id || !tsStr) return { error: "Invalid or expired token" };
     const ts = parseInt(tsStr, 10);
     if (Number.isNaN(ts) || Date.now() - ts > 24 * 60 * 60 * 1000) {
       return { error: "Token expired" };

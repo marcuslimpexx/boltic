@@ -1,9 +1,13 @@
 import { auth } from "@/lib/auth/config";
 import { redirect } from "next/navigation";
 
-export default async function AccountPage() {
-  const session = await auth();
-  if (!session) redirect("/login");
+export default async function AccountPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const [session, { locale }] = await Promise.all([auth(), params]);
+  if (!session) redirect(`/${locale}/login`);
 
   return (
     <div className="container mx-auto px-4 py-12">

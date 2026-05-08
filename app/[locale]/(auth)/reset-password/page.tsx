@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { resetPasswordSchema } from "@/lib/auth/schemas";
 import { resetPasswordAction } from "@/lib/auth/actions";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -19,10 +19,7 @@ import {
 } from "@/components/ui/card";
 import { BolticLogo } from "@/components/layout/boltic-logo";
 
-const schema = z.object({
-  password: z.string().min(8, "Password must be at least 8 characters"),
-});
-type FormInput = z.infer<typeof schema>;
+type FormInput = { password: string };
 
 function ResetPasswordContent() {
   const t = useTranslations("auth");
@@ -35,7 +32,7 @@ function ResetPasswordContent() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<FormInput>({ resolver: zodResolver(schema) });
+  } = useForm<FormInput>({ resolver: zodResolver(resetPasswordSchema.pick({ password: true })) });
 
   const onSubmit = async (data: FormInput) => {
     setServerError(null);
