@@ -5,6 +5,7 @@ interface BolticLogoProps {
   className?: string;
   variant?: "dark" | "light" | "indigo";
   size?: "sm" | "md" | "lg";
+  onClick?: () => void;
 }
 
 const sizeMap = {
@@ -23,6 +24,7 @@ export function BolticLogo({
   className,
   variant = "dark",
   size = "md",
+  onClick,
 }: BolticLogoProps) {
   const textSize = sizeMap[size];
   const { textClass, accentClass } = variantMap[variant];
@@ -30,6 +32,7 @@ export function BolticLogo({
   return (
     <Link
       href="/"
+      onClick={onClick}
       className={cn(
         "inline-flex items-center font-bold tracking-tight select-none no-underline gap-1",
         textSize,

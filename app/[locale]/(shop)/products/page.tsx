@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { productRepo } from "@/lib/data";
 import { ProductGrid } from "@/components/product/product-grid";
 import { ProductFilters } from "@/components/product/product-filters";
+import { MobileFiltersSheet } from "@/components/product/mobile-filters-sheet";
 import { ProductSort } from "@/components/product/product-sort";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
@@ -96,15 +97,21 @@ export default async function ProductsPage({
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Page header */}
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold">{tCategory("power_banks")}</h1>
-        <p className="text-sm text-muted-foreground mt-1">
-          {t("showing", { count: result.total })}
-        </p>
+      <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-bold">{tCategory("power_banks")}</h1>
+          <p className="text-sm text-muted-foreground mt-1">
+            {t("showing", { count: result.total })}
+          </p>
+        </div>
+        {/* Mobile filter trigger */}
+        <Suspense fallback={null}>
+          <MobileFiltersSheet brands={brands} label={t("title")} />
+        </Suspense>
       </div>
 
       <div className="flex gap-8">
-        {/* Sidebar filters */}
+        {/* Sidebar filters — desktop only */}
         <aside className="hidden lg:block w-64 shrink-0">
           <Suspense fallback={null}>
             <ProductFilters brands={brands} />

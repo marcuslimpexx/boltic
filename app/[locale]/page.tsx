@@ -107,7 +107,7 @@ export default async function HomePage({ params }: PageProps) {
     <div className="overflow-x-hidden">
       {/* ─── HERO ──────────────────────────────────────────────── */}
       <section
-        className="relative min-h-[88vh] flex flex-col items-center justify-center text-center overflow-hidden"
+        className="relative min-h-[70vh] sm:min-h-[88vh] flex flex-col items-center justify-center text-center overflow-hidden"
         style={{
           background:
             "radial-gradient(ellipse 90% 70% at 50% -10%, rgba(61,43,255,0.45) 0%, rgba(61,43,255,0.1) 40%, transparent 70%), #080816",
@@ -329,7 +329,7 @@ export default async function HomePage({ params }: PageProps) {
               <Link
                 key={cat.slug}
                 href={`/categories/${cat.slug}`}
-                className={`group relative block p-6 rounded-xl border border-white/10 bg-gradient-to-br ${cat.color} hover:border-white/25 transition-all duration-300 overflow-hidden`}
+                className={`group relative block p-4 sm:p-6 rounded-xl border border-white/10 bg-gradient-to-br ${cat.color} hover:border-white/25 transition-all duration-300 overflow-hidden`}
               >
                 {/* Hover glow */}
                 <div
@@ -340,9 +340,9 @@ export default async function HomePage({ params }: PageProps) {
                 />
 
                 <div className="relative z-10">
-                  <div className="text-3xl mb-4">{cat.emoji}</div>
+                  <div className="text-2xl sm:text-3xl mb-3 sm:mb-4">{cat.emoji}</div>
                   <p
-                    className="font-bold text-white text-lg leading-tight mb-1"
+                    className="font-bold text-white text-base sm:text-lg leading-tight mb-1"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {locale === "vi" ? cat.labelVi : cat.labelEn}

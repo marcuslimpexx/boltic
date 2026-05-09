@@ -380,7 +380,7 @@ export function CheckoutForm({ locale }: CheckoutFormProps) {
 
             {/* Right: order summary */}
             <aside>
-              <div className="border border-border rounded-xl p-4 space-y-4 sticky top-24">
+              <div className="border border-border rounded-xl p-4 space-y-4 lg:sticky lg:top-24">
                 <h2 className="font-semibold">{t("order_summary")}</h2>
                 <Separator />
 

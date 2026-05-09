@@ -69,8 +69,8 @@ export function ProductCard({ product, locale, className }: ProductCardProps) {
           )}
         </div>
 
-        {/* Wishlist — appears on hover */}
-        <div className="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+        {/* Wishlist — always visible on touch, hover on desktop */}
+        <div className="absolute top-2.5 right-2.5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-200 sm:translate-y-1 sm:group-hover:translate-y-0">
           <WishlistButton productId={product.id} size="sm" />
         </div>
       </Link>
