@@ -1,0 +1,114 @@
+---
+description: Boltic project memory — full context, stack, deployment state, and conventions
+alwaysApply: true
+---
+
+# Boltic Ecommerce — Project Memory
+
+## What is this project?
+Boltic is a Vietnam-focused online marketplace for power banks. It supports Vietnamese (vi) and English (en) locales, integrates local payment methods, and is deployed on Vercel.
+
+- **Live URL**: https://boltic-pexx-f9d10167.vercel.app  
+- **GitHub**: https://github.com/marcuslimpexx/boltic  
+- **Local path**: `/Users/marcuslim/Boltic Ecommerce/boltic/`
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js **15.5.18** (App Router, Webpack — NOT Turbopack) |
+| Language | TypeScript (strict mode) |
+| Styling | Tailwind CSS v4 + shadcn/ui |
+| i18n | next-intl v4 (`vi` + `en`) |
+| Auth | NextAuth.js v5 (Auth.js) — Credentials Provider + JWT |
+| Forms | react-hook-form + Zod v4 |
+| State | Zustand (cart) |
+| ORM | Prisma 7.8.0 + PostgreSQL (`@prisma/adapter-pg`) |
+| Email | Resend |
+| Payment | VNPay (stub provider in dev/staging) |
+| Deployment | Vercel (Node.js ≥20) |
+
+---
+
+## Critical Deployment Notes
+
+- **Next.js must stay at 15.5.18** — v16+ uses Turbopack for prod builds which Vercel does not yet support (causes universal 404s).
+- **No `middleware.ts`** — All attempts to use NextAuth or next-intl middleware caused `MIDDLEWARE_INVOCATION_FAILED` on Vercel's Edge Runtime. Locale is set via `setRequestLocale(locale)` in `app/[locale]/layout.tsx` instead.
+- **`opengraph-image.tsx` uses `runtime = "nodejs"`** — Prisma/pg use `fs`, incompatible with Edge Runtime.
+- **`prisma generate` runs in the `build` script** (not `postinstall`) so errors are visible in Vercel build logs.
+- **`vercel.json`** must NOT include `nodeVersion` (invalid schema). Node version is pinned via `"engines": { "node": ">=20.0.0" }` in `package.json`.
+- **ESLint** is ignored during builds (`eslint: { ignoreDuringBuilds: true }` in `next.config.ts`).
+- **Vercel Deployment Protection** should be DISABLED for the project to be publicly accessible.
+
+---
+
+## Environment Variables (Vercel)
+
+```
+AUTH_SECRET=W5za9uRdnsXeSAbQYna2+qVFVUW+Dcb/z9XohZpV5To=
+AUTH_URL=https://boltic-pexx-f9d10167.vercel.app
+NEXT_PUBLIC_SITE_URL=https://boltic-pexx-f9d10167.vercel.app
+DATABASE_URL=<postgres connection string>
+PAYMENT_PROVIDER=stub
+EMAIL_FROM=noreply@boltic.vn
+```
+
+---
+
+## Key File Locations
+
+| File | Purpose |
+|---|---|
+| `app/[locale]/layout.tsx` | Root locale layout; calls `setRequestLocale(locale)` |
+| `app/[locale]/page.tsx` | Homepage — hero is hardcoded JSX ("Power, Delivered.") |
+| `app/[locale]/(shop)/checkout/checkout-form.tsx` | Checkout form with payment methods + card logos |
+| `components/layout/site-footer.tsx` | Footer with payment logos (Visa, MC, Amex, MoMo, ZaloPay, VietQR) |
+| `components/layout/boltic-logo.tsx` | Logo: lightning bolt SVG + plain "Boltic" text |
+| `lib/cart/schemas.ts` | Zod schema — paymentMethod enum includes `card` |
+| `messages/en.json` + `messages/vi.json` | All UI translations |
+| `next.config.ts` | Next.js config (ESLint ignore, image domains) |
+| `vercel.json` | Vercel build config (`framework`, `installCommand`, `buildCommand`) |
+| `prisma/schema.prisma` | Database schema |
+| `lib/auth/config.ts` | NextAuth config (Credentials Provider, bcryptjs) |
+
+---
+
+## Payment Methods
+
+Supported (schema enum `"bank_transfer" | "vietqr" | "momo" | "zalopay" | "card"`):
+- **Visa / Mastercard / Amex** — shown with inline SVG logos in checkout + footer
+- **VietQR** — Vietnamese bank QR transfer
+- **MoMo** — pink badge
+- **ZaloPay** — blue badge
+
+---
+
+## Locale / i18n Pattern
+
+- Routes: `/vi/...` and `/en/...`
+- No middleware — locale comes from the URL segment `[locale]`
+- `setRequestLocale(locale)` is called at the top of `LocaleLayout` and `generateMetadata`
+- Supported locales defined in `i18n/routing.ts`
+
+---
+
+## Authentication
+
+- NextAuth v5 with Credentials Provider
+- Passwords hashed with bcryptjs
+- Session strategy: JWT
+- Roles: `"user"` | `"admin"`
+- `AUTH_SECRET` must be set in Vercel env vars
+- Edge-safe auth config was removed; no auth in middleware
+
+---
+
+## Conventions
+
+- Use `formatVND()` from `lib/utils/format` for all currency display
+- Product slugs are used for routing (`/products/[slug]`)
+- Repository pattern: mock implementations in dev, Prisma-backed in prod
+- Server Actions use `useActionState` / `useFormStatus` (React 19 APIs)
+- No `any` types; strict TypeScript throughout
